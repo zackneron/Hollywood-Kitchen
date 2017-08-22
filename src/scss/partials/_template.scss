@@ -1,0 +1,273 @@
+/* Global - Components ----------------------------------------------------- */
+.page-title-header {
+  margin-top: rem-calc(20);
+}
+.breadcrumbs {
+  margin-bottom: rem-calc(30);
+}
+.featured-image {
+  margin-bottom: rem-calc(30);
+  width: 100%;
+}
+.inline-image {
+  &-left {
+    margin: rem-calc(0 15 15 0);
+    float: left;
+  }
+  &-right {
+    margin: rem-calc(0 0 15 15);
+    float: right;
+  }
+}
+
+/* Global - Scroll Top Button ---------------------------------------------- */
+.scroll-top {
+  &--button {
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    font-size: rem-calc(20);
+    display: inline-block;
+    bottom: rem-calc(50);
+    right: rem-calc(10);
+    visibility: hidden;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+    opacity: 0;
+  }
+  &--visible,
+  &--fade-out,
+  .no-touch .scroll-top:hover {
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+  &--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  &--fade-out {
+    opacity: 0.5;
+  }
+}
+
+/* Global - Navigation ----------------------------------------------------- */
+.business-details {
+  padding: rem-calc(20 0);
+  &__contact {
+    @include reset-list-styles(none);
+    i {
+      min-width: rem-calc(20);
+    }
+  }
+  &__social {
+    @include reset-list-styles(left);
+    a:not(:last-child) {
+      margin-right: rem-calc(20);
+    }
+  }
+}
+.navbar-default {
+  margin: 0;
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
+}
+
+/* Global - Contact Form --------------------------------------------------- */
+.titan-contact-form {
+  margin-top: rem-calc(40);
+  input,
+  textarea {
+    margin-bottom: rem-calc(20);
+    border: 1px solid $gray60;
+    @include border-radius(0);
+    -webkit-appearance: none;
+    padding: rem-calc(8);
+    width: 100%;
+  }
+  input[value="Submit"] {
+    background-color: $gray60;
+    color: $white;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .gfield_required {
+    color: $error-red;
+  }
+  .gform_validation_container {
+    display: none;
+  }
+}
+
+/* Global - Footer --------------------------------------------------------- */
+.footer {
+  background-color: $gray13;
+  margin-top: rem-calc(50);
+  font-size: rem-calc(12);
+  padding: rem-calc(32 0);
+  color: $gray98;
+  a {
+    color: $gray98;
+  }
+}
+.footer__copyright {
+  margin-bottom: rem-calc(5);
+}
+.footer__menu {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      border-left: 1px solid $gray98;
+      padding: rem-calc(0 10);
+      list-style: none;
+      display: block;
+      float: left;
+      margin: 0;
+      &:first-child {
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+  }
+}
+.footer__badge {
+  text-align: right;
+  span {
+    margin-right: rem-calc(10);
+  }
+}
+
+/* Global Components - Slider ---------------------------------------------- */
+.banner-slider {
+  position: relative;
+  &__images-wrapper {
+    height: rem-calc(600);
+    margin-bottom: 0;
+    overflow: hidden;
+    &__image {
+      img {
+        position: relative;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__content-wrapper {
+    height: rem-calc(600);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &__content {
+      display: block;
+      margin: rem-calc(0 40);
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .slick {
+    &-list,
+    &-track,
+    &-slide {
+      height: 100%;
+      z-index: 1;
+    }
+    &-arrow {
+      z-index: 2;
+    }
+    &-prev {
+      left: rem-calc(15);
+    }
+    &-next {
+      right: rem-calc(15);
+    }
+  }
+}
+
+/* Home Page - Leadins ----------------------------------------------------- */
+.leadin-item {
+  margin-bottom: rem-calc(20);
+  img {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+/* Testimonials Page ------------------------------------------------------- */
+.testimonial-item {
+  margin-top: rem-calc(30);
+  h2 {
+    margin-top: 0;
+  }
+  img {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+/* Services Page ----------------------------------------------------------- */
+.services-item {
+  margin-bottom: rem-calc(20);
+  img {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+/* Gallery Page ------------------------------------------------------------ */
+.chocolat-image {
+  display: block;
+  img {
+    margin-bottom: rem-calc(30);
+    display: inherit;
+  }
+}
+
+/* FAQs Page --------------------------------------------------------------- */
+.faqs {
+  .panel-group {
+    margin-top: rem-calc(30);
+  }
+  .panel-heading .glyphicon {
+    float: right;
+  }
+}
+
+/* Latest News Page  ------------------------------------------------------- */
+.news-item {
+  margin-bottom: rem-calc(20);
+  img {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+/* Contact Us Page --------------------------------------------------------- */
+.contact .titan-contact-form {
+  margin-top: 0;
+}
+.contact-details {
+  .contact-header {
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+  .google-map {
+    margin-top: rem-calc(30);
+    height: rem-calc(370);
+    width: 100%;
+    border: 0;
+  }
+  &.hours p {
+    margin: 0;
+  }
+}

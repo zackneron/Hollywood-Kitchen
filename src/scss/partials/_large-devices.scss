@@ -1,0 +1,36 @@
+/* Large devices (large desktops, 1200px and up) --------------------------- */
+@media (min-width: $large-devices) {
+  /* Header ---------------------------------------------------------------- */
+  /* code here... */
+
+  .site-header {
+    .site-header__top-link {
+      font-size: 18px;
+    }
+}
+
+  // Bootstrap
+  .navbar-nav>li>a {
+      padding-top: 55px;
+      padding-bottom: 65px;
+      font-size: 19px;
+  }
+
+  /* Content --------------------------------------------------------------- */
+  /* code here... */
+
+    .content-page {
+
+  .content-page__text {
+    // Contact Page
+    .contact-form {
+      .btn-contact__submit {
+        padding: 2px 30px;
+      }
+    }
+  }
+}
+
+  /* Footer ---------------------------------------------------------------- */
+  /* code here... */
+}

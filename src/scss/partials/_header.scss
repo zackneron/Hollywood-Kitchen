@@ -1,0 +1,55 @@
+body {
+    font-size: $font16;
+    font-family: $font-default;
+    color: $gray28;
+}
+.site-header {
+  .site-header__top-link {
+    background-color: $gray53;
+    padding: 10px 0 0;
+    color: $white;
+    font-family: $SourceSansPro-Regular;
+
+    a {
+      color: $white;
+    }
+
+    .site-header__top-link--social {
+      .fa {
+        color: $white;
+      }
+    }
+
+    .site-header__top-link--address {
+      text-align: right;
+
+      li {
+        padding: 0 10px;
+        border-left: 1px solid $light-gray ;
+      }
+
+      li:first-child {
+        border-left: none;
+      }
+
+      .fa {
+        color: $lighten-green;
+      }
+    }
+  }
+
+  .navbar {
+    margin-top: 20px;
+
+    .hol-logo {
+      margin: auto;
+    }
+  }
+
+  .navbar-nav li.active {
+    a {
+      color: $lighten-green;
+      border-bottom: 10px solid $lighten-green;
+    }
+  }
+}

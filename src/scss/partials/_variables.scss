@@ -1,0 +1,98 @@
+/* Media Query Screen Sizes ------------------------------------------------ */
+$xsmall-devices: 0px;
+$small-devices: 768px;
+$medium-devices: 992px;
+$large-devices: 1200px;
+
+/* Fonts / Sizes ----------------------------------------------------------- */
+
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../fonts/Caviar-Dreams/CaviarDreams.ttf");
+}
+
+@font-face {
+  font-family: "Caviar_Dreams Bold";
+  src: url("../fonts/Caviar-Dreams/Caviar_Dreams_Bold.ttf");
+}
+
+@font-face {
+  font-family: "Caviar_Dreams Italic";
+  src: url("../fonts/Caviar-Dreams/CaviarDreams_Italic.ttf");
+}
+
+@font-face {
+  font-family: "Caviar_Dreams Bold Italic";
+  src: url("../fonts/Caviar-Dreams/CaviarDreams_BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Asap Italic";
+  src: url("../fonts/asap/Asap-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SourceSansPro Regular";
+  src: url("../fonts/source-sans-pro/SourceSansPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Lato Light";
+  src: url("../fonts/lato/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../fonts/lato/Lato-Regular.ttf");
+}
+
+$font-default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$Caviar_Dreams: "CaviarDreams", $font-default;
+$Caviar_Dreams-bold: "Caviar_Dreams Bold", $font-default;
+$Caviar_Dreams-italic: "Caviar_Dreams Italic", $font-default;
+$Caviar_Dreams-bold-italic: "Caviar_Dreams Bold Italic", $font-default;
+
+$Asap-italic: "Asap Italic", $font-default;
+$SourceSansPro-Regular: "SourceSansPro Regular", $font-default;
+$lato-light: "Lato Light", $font-default;
+$lato-regular: "Lato Regular", $font-default;
+
+$font16: 16px;
+
+/* Colors - Naming standardized via www.color-hex.com when appropriate ----- */
+$titan-light-blue: rgb(29, 145, 187);
+$titan-dark-blue: rgb(15, 59, 96);
+$error-red: rgb(204, 0, 0);
+
+$gray13: rgb(33, 33, 33);
+$gray60: rgb(111, 111, 111);
+$gray40: rgb(101, 101, 101);
+$gray98: rgb(116, 116, 116);
+$gray53: rgb(129, 130, 136);
+$gray97: rgb(249, 250, 251);
+$gray28: rgb(71,71,71);
+$gray87: rgb(223,223,223);
+
+$beige: rgb(231,231,231);
+$beige96: rgb(244,244,244);
+
+$blue62: rgb(135,149,159);
+
+$black: rgb(0, 0, 0);
+$black-gray: rgb(49,49,49);
+$white: rgb(251, 251, 251);
+
+$lighten-green  : #a8c631;
+
+$dark-gray      : #212121;
+$gray           : #555;
+$light-gray     : #acadb3;
+
+$dark-blue      : #15375c;
+
+$dark-green     : #0c7776;
+$light-green    : #42bb4a;
+$lemon-green    : #87a124;
+
+$red            : #eb0000;

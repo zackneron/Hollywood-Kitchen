@@ -1,0 +1,376 @@
+/* Small devices (tablets, 480px and up) ----------------------------------- */
+@media (min-width: 0px) {
+  /* Header ---------------------------------------------------------------- */
+  /* code here... */
+
+  .site-header {
+  .site-header__top-link {
+    font-size: 18px;
+
+    .site-header__top-link--social {
+      text-align: center;
+
+      .fa {
+        font-size: 25px;
+      }
+    }
+
+    .site-header__top-link--address {
+      text-align: center;
+    }
+  }
+}
+
+  // Bootstrap
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .navbar-toggle .icon-bar {
+    background: $black;
+}
+
+
+  /* Content --------------------------------------------------------------- */
+  /* code here... */
+
+  .section-heading {
+    font-size: 25px;
+  }
+
+  .home__video {
+    position: relative;
+    height: 640px;
+    border-bottom: 10px solid $lighten-green;
+
+    background-image: url(../images/md-green-box.png), url(../images/md-green-box.png);
+    background-position: left top, center top;
+    background-repeat: no-repeat, no-repeat;
+
+    .overlay {
+      background-image: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,.5));
+      min-height: 100%;
+    }
+
+    video {
+      display: block;
+    }
+
+    .bgvid {
+      width: 100%;
+      height: 640px;
+      position: absolute;
+      right:0;
+      left:0;
+      background: url(../images/HOL-video-img.png) no-repeat;
+      background-size: cover;
+      object-fit: cover;
+      z-index: -1;
+
+        source {
+          max-width: 100%;
+        }
+    }
+
+    a {
+      .hol-btn-play {
+        background: url(../images/hol-play-btn.png) center no-repeat;
+        height: 182px;
+        width: 181px;
+        margin: 220px auto 0;
+      }
+
+      .home__video--text {
+        font-family: $Caviar_Dreams-bold;
+        color: $white;
+        font-size: 45px;
+        width: 50%;
+        margin: 40px auto 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .content-page {
+    padding-bottom: 55px;
+    position: relative;
+
+    .separator-service {
+      width: 50px;
+      height: 0;
+      border-bottom: 1px solid $gray28;
+      margin: auto;
+    }
+    .separator {
+      width: 200px;
+      height: 0;
+      border-bottom: 1px solid $gray28;
+      margin: auto;
+    }
+
+  // index page
+
+  .blog {
+    padding-top: 20px;
+
+    .blog-service {
+      .thumb-overlay:hover {
+        background: red;
+        z-index: 1;
+        opacity: 0.5;
+      }
+      img {
+        width: 100%;
+      }
+
+      h4 {
+        font-size: 25px;
+      }
+
+      .blog-service__text {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        margin-left: -17px;
+
+        a .blog-service__text-icon {
+          color: $black;
+          padding: 10px 12px;
+          background: $lighten-green;
+          opacity: 0;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .blog-service__separator {
+        width: 50px;
+        height: 3px;
+        background-color: $black;
+      }
+    }
+  }
+
+
+  .content-page__text {
+    h2 {font-size: 30px;}
+    h3 {font-size: 25px;}
+    h4 {font-size: 20px;}
+
+    .hol-banner-thumb {
+      padding-right: 10px;
+    }
+
+    .content-page__text--item {
+      margin-left: 10px;
+    }
+
+    .content-page__text--gallery_thumb {
+      margin-bottom: 20px;
+    }
+
+    // Testimonial page
+
+    .content-page__text--fieldset {
+      p, h5 {
+        margin-top: 0;
+        padding-left: 20px;
+      }
+    }
+
+    // Contact Page
+    .contact-form {
+      .hol-captcha {
+        float: left;
+        margin-bottom: 20px;
+      }
+      .form-control_cap {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+      }
+
+      .btn-contact__submit {
+        padding: 2px 17px;
+        background-color: $lighten-green;
+        font-family: $Caviar_Dreams-bold;
+        color: $white;
+        font-size: 20px;
+      }
+    }
+
+    .address--bar {
+      border-left: 10px solid $gray87;
+      padding-left: 20px;
+      margin-bottom: 20px;
+
+      h6 {
+        color:$lighten-green;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 5px 0;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .glyphicon {
+        color: $gray98;
+        padding-right: 10px;
+      }
+
+      a {
+        color: $gray28;
+      }
+    }
+  }
+
+  .blog_client {
+    padding-top: 10px;
+    h5 {
+      font-family: $lato-regular;
+      text-transform: uppercase;
+      font-size: 17px;
+      color: $black;
+    }
+
+    a {
+      color: orange;
+      text-decoration: underline;
+    }
+
+    .text-success {
+      color:$lighten-green;
+    }
+  }
+}
+
+.renovation {
+  padding-bottom: 0;
+}
+
+  /* Footer ---------------------------------------------------------------- */
+  /* code here... */
+
+  .pre-footer {
+    .pre-footer__newsletter {
+      .container {
+        padding: 20px 0 0;
+
+        form {
+          padding: 0 15px;
+
+          label, span {
+            color: $white;
+            font-size: 23px;
+            font-weight: 400;
+            display: inline-block;
+            font-family: $Caviar_Dreams-bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+      background-color: $lighten-green;
+    }
+
+    .pre-footer__contact {
+      color: $gray60;
+      background-image: url(../images/sm-green-box-01.png), url(../images/sm-green-box-02.png);
+      background-position: right top, right bottom;
+      background-repeat: no-repeat, no-repeat;
+
+      h2, h3, h5, h6 {
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+      }
+
+      h2:before {
+        border-left-bottom: 1px solid red; content: "";
+      }
+
+      h3 {
+        font-size: 25px;
+        margin-top: 20px;
+        font-family: $Caviar_Dreams;
+      }
+      h5 {
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+      h6 {
+        font-size: 15px;
+        text-transform: uppercase;
+
+        a {
+          color: $white;
+        }
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .contact-title {
+        display: block;
+        font-family: $Asap-italic;
+      }
+
+      .contact__news {
+        margin-top: 50px;
+      }
+
+      .contact__location {
+
+        .list-unstyled {
+          margin-bottom: 20px;
+        }
+        .opening-hours {
+          .opening_day, .opening_hours {
+            display: block;
+            float: left;
+          }
+
+          .opening_day {
+            padding-right: 15px;
+            width: 100px;
+          }
+
+          .opening_hours {
+            width: calc(100% - 120px);
+          }
+        }
+      }
+
+      .contact__map {
+        .contact__map__body {
+          iframe {
+            width: 100%;
+            min-height: 390px;
+            height: 100%;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+
+  footer.site-footer {
+    .footer-info {
+      text-align: center;
+    }
+  }
+
+}

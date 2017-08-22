@@ -1,0 +1,145 @@
+/* Small devices (tablets, 768px and up) ----------------------------------- */
+@media (min-width: $small-devices) and (max-width: 991px) {
+  /* Header ---------------------------------------------------------------- */
+  /* code here... */
+
+  .site-header {
+    .site-header__top-link {
+      font-size: 11px;
+
+      .site-header__top-link--social {
+        text-align: left;
+
+        .fa {
+          font-size: 15px;
+        }
+      }
+
+      .site-header__top-link--address {
+        text-align: right;
+      }
+    }
+  }
+
+  //  Custom toggle menu
+
+    .navbar-toggle {
+        margin-right: 0;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .collapsing {
+        overflow: hidden !important;
+    }
+
+  .navbar-nav {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+
+  /* Content --------------------------------------------------------------- */
+  /* code here... */
+
+  .section-heading {
+    font-size: 40px;
+  }
+
+  .content-page {
+
+  .content-page__text {
+    .content-page__text--item {
+      margin-left: 50px;
+    }
+
+    // Testimonial page
+    .content-page__text--fieldset {
+      p, h5 {
+        margin-top: 0;
+        padding-left: 70px;
+      }
+    }
+
+  // Contact Page
+    .contact-form {
+      .hol-captcha {
+        float: left;
+        margin-bottom: 20px;
+      }
+    }
+
+    .address--bar {
+      h6 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Sidebar
+  .sidebar {
+    .sidebar__form {
+      .btn-sidebar {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+
+// Bootstrap
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+  /* Footer ---------------------------------------------------------------- */
+  /* code here... */
+
+  footer.site-footer {
+        .footer-info {
+            text-align: left;
+            .foo-titan {
+                text-align: right;
+            }
+        }
+    }
+
+}

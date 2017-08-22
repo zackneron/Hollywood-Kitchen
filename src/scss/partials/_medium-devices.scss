@@ -1,0 +1,116 @@
+/* Medium devices (desktops, 992px and up) --------------------------------- */
+@media (min-width: $medium-devices) {
+  /* Header ---------------------------------------------------------------- */
+  /* code here... */
+
+  .site-header {
+    .site-header__top-link {
+      font-size: 15px;
+
+      .site-header__top-link--social {
+        text-align: left;
+
+        .fa {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+
+  // Bootstrap
+  .navbar-nav>li>a {
+      padding-top: 55px;
+      padding-bottom: 65px;
+      font-size: 16px;
+  }
+
+  /* Content --------------------------------------------------------------- */
+  /* code here... */
+
+  .section-heading {
+      font-size: 40px;
+  }
+  .content-page {
+
+  .content-page__text {
+    h2 {font-size: 35px;}
+    h3 {font-size: 30px;}
+    h4 {font-size: 25px;}
+    h5 {font-size: 20px;}
+
+    p {margin-bottom: 20px;}
+
+    .hol-banner-thumb {
+      padding-right: 20px;
+    }
+
+    .content-page__text--item {
+      margin-left: 100px;
+    }
+
+    // Contact Page
+    .contact-form {
+      .hol-captcha {
+        float: left;
+        margin-right: 20px;
+      }
+      .form-control_cap {
+        width: 45%;
+        float: left;
+        margin-right: 20px;
+      }
+
+      .btn-contact__submit {
+        padding: 2px 17px;
+        font-size: 20px;
+      }
+    }
+
+    .address--bar {
+      border-left: 10px solid $gray87;
+      padding-left: 20px;
+      margin-bottom: 20px;
+
+      h6 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // index page
+  .blog_client {
+    .row {
+      padding-bottom: 20px;
+    }
+  }
+
+  // Sidebar
+  .sidebar {
+    .sidebar__form {
+      .btn-sidebar {
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+// Bootstrap
+.form-horizontal .control-label {
+    text-align: left;
+    padding-left: 40px;
+}
+
+  /* Footer ---------------------------------------------------------------- */
+  /* code here... */
+
+  footer.site-footer {
+    .footer-info {
+      text-align: left;
+      .foo-titan {
+        text-align: right;
+      }
+    }
+  }
+
+}
